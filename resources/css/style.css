@@ -54,3 +54,34 @@ nav img {
 nav a {
   padding: 0;
 }
+
+/* About Section Styling */
+
+.about.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Values Section Styling */
+
+#values {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.values.row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+}
+
+.value li {
+  text-align: left;
+}
