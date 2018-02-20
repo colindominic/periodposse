@@ -23,5 +23,34 @@
 
 html {
   font-size: 16px;
+}
 
+/* NavBar Styling */
+
+nav {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-brand {
+  height: 2.75rem;
+  padding: 0 0 0 1rem;
+}
+
+nav img {
+  height: 100%;
+  width: auto;
+  flex-grow: 1;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+nav a {
+  padding: 0;
 }
