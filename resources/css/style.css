@@ -31,9 +31,14 @@ nav {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   height: 3rem;
+}
+
+.navbar {
+  width: 100%;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 5;
+  background-color: white;
 }
 
 .navbar-brand {
@@ -49,6 +54,8 @@ nav img {
 
 .navbar-nav {
   float: right;
+  display: flex;
+  align-items: flex-end;
 }
 
 nav a {
@@ -56,6 +63,10 @@ nav a {
 }
 
 /* About Section Styling */
+
+#about {
+  margin-top: 3rem;
+}
 
 .about.row {
   display: flex;
@@ -82,6 +93,34 @@ nav a {
   flex-direction: column;
 }
 
-.value li {
-  text-align: left;
+/* Team Section Styling */
+
+#team {
+  text-align: center;
+}
+
+#team .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Contact Section Styling */
+
+#contact {
+  text-align: center;
+}
+
+.social-media {
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-media span {
+  padding-left: 0.5rem;
+}
+
+/* Medical and Social Resources Section Styling */
+
+#resources {
+  text-align: center;
 }
