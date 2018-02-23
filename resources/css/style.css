@@ -12,7 +12,7 @@
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
@@ -25,11 +25,31 @@ html {
   font-size: 16px;
 }
 
+p, span, li {
+  font-family: "Montserrat";
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-family: "League Gothic";
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+h4, h5 {
+  font-family: "League Spartan";
+  font-weight: bold;
+  font-style: italic;
+}
+
+a {
+  color: #062345;
+}
+
 /* NavBar Styling */
 
 nav {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+
   height: 3rem;
 }
 
@@ -42,11 +62,13 @@ nav {
 }
 
 .navbar-brand {
+  display: flex;
+  align-items: center;
   height: 2.75rem;
   padding: 0 0 0 1rem;
 }
 
-nav img {
+.navbar-brand img {
   height: 100%;
   width: auto;
   flex-grow: 1;
@@ -56,6 +78,7 @@ nav img {
   float: right;
   display: flex;
   align-items: flex-end;
+  padding-bottom: 0.5rem;
 }
 
 nav a {
@@ -66,6 +89,16 @@ nav a {
 
 #about {
   margin-top: 3rem;
+  background-color: #062345;
+  color: white;
+}
+
+.about h3 {
+  background-color: #ff47b8;
+}
+
+.about {
+  padding-bottom: 1rem;
 }
 
 .about.row {
@@ -80,23 +113,45 @@ nav a {
 #values {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
+  background-color: #ffd4eb;
+  /*background-image: -webkit-linear-gradient(155deg, #ffd4eb  35%, #ff47b8 35%);*/
+  color: #062345;
+}
+
+#values h3 {
+  background-color: #062345;
+  color: white;
 }
 
 .values.row {
   display: flex;
   align-items: flex-start;
+  background-color: #ffd4eb;#ffd4eb
 }
 
 .value {
   display: flex;
   flex-direction: column;
+  padding-bottom: 1rem;
 }
 
 /* Team Section Styling */
 
 #team {
   text-align: center;
+  background-color: #062345;
+  color: white;
+}
+
+.team-head {
+  display: flex;
+  justify-content: center;
+}
+
+#team h3 {
+  background-color: #ff47b8;
 }
 
 #team .row {
@@ -104,10 +159,27 @@ nav a {
   justify-content: space-around;
 }
 
+.member {
+  padding-bottom: 1rem;
+}
+
 /* Contact Section Styling */
 
 #contact {
   text-align: center;
+  background-color: #ffd4eb;
+  padding-bottom: 1rem;
+  color: #062345;
+}
+
+.contact-head {
+  display: flex;
+  justify-content: center;
+}
+
+#contact h3 {
+  background-color: #062345;
+  color: white;
 }
 
 .social-media {
@@ -123,4 +195,9 @@ nav a {
 
 #resources {
   text-align: center;
+  color: #062345;
+}
+
+.resource {
+  color: #062345;
 }
