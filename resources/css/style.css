@@ -85,6 +85,14 @@ nav a {
   padding: 0;
 }
 
+/* Jumbotron Section Styling */
+
+.jum img {
+  height: 15rem;
+  width: auto;
+  overflow: hidden;
+}
+
 /* About Section Styling */
 
 #about {
